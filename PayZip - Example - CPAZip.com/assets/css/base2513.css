@@ -1,0 +1,392 @@
+/* Base Modal Styles */
+.modal img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.modal-backdrop.fade,
+.modal.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  -moz-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+.modal-backdrop.fade.in,
+.modal.fade.in { opacity: 1; }
+.modal-backdrop.hide,
+.modal.hide { display: none; }
+.modal .close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.modal .close:hover,
+.modal .close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+.modal button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+.modal .btn,
+#access_button {
+  font-family: Open Sans;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  *display: inline;
+  /* IE7 inline-block hack */
+
+  *zoom: 1;
+  padding: 12px 38px;
+  margin-bottom: 0;
+  font-size: 24px;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #fff;
+  background-image: -moz-linear-gradient(top, #6bad05, #397504);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6bad05), to(#397504));
+  background-image: -webkit-linear-gradient(top, #6bad05, #397504);
+  background-image: -o-linear-gradient(top, #6bad05, #397504);
+  background-image: linear-gradient(to bottom, #6bad05, #397504);
+  background-repeat: repeat-x;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  border: 2px solid #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+.modal .btn:hover,
+.modal .btn:focus,
+.modal .btn:active,
+#access_button:hover,
+#access_button:focus,
+#access_button:active {
+  color: #eee;
+  background-image: -moz-linear-gradient(top, #397504, #397504);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#397504), to(#397504));
+  background-image: -webkit-linear-gradient(top, #397504, #397504);
+  background-image: -o-linear-gradient(top, #397504, #397504);
+  background-image: linear-gradient(to bottom, #397504, #397504);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+.modal-backdrop.fade { opacity: 0; }
+.modal-backdrop,
+.modal-backdrop.fade.in { opacity: 0.8; filter: alpha(opacity=80); }
+.modal {
+	font-family: Open Sans;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 1050;
+  width: 560px;
+  margin-left: -280px;
+  background-color: #ffffff;
+  border: 1px solid #6c7065;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  *border: 1px solid #6c7065;
+  /* IE6-7 */
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  outline: none;
+}
+.modal.fade {
+  -webkit-transition: opacity .3s linear, top .3s ease-out;
+  -moz-transition: opacity .3s linear, top .3s ease-out;
+  -o-transition: opacity .3s linear, top .3s ease-out;
+  transition: opacity .3s linear, top .3s ease-out;
+  top: -25%;
+}
+.modal.fade.in { top: 10%; }
+.modal h1,
+.modal h2,
+.modal h3,
+.modal h4,
+.modal h5,
+.modal h6 {
+  color: #3d3b36;
+  font-family: Open Sans;
+  line-height: 20px;
+  margin: 10px 0;
+  text-rendering: optimizelegibility;
+}
+.modal h1,
+.modal h2,
+.modal h3 { line-height: 40px; }
+.modal h1 { font-size: 41.25px; }
+.modal h2 { font-size: 33.75px; }
+.modal h3 { font-size: 26.25px; }
+.modal h4 { font-size: 18.75px; }
+.modal h5 { font-size: 15px; }
+.modal h6 { font-size: 12.75px; }
+.modal-header { padding: 9px 15px; border-bottom: 1px solid #eee; }
+.modal-header .close { margin-top: 2px; }
+.modal-header h3 { margin: 0; line-height: 30px; }
+.modal-body {
+  position: relative;
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 15px;
+}
+.modal-form { margin-bottom: 0; }
+.modal-footer {
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  text-align: right;
+  background-color: #f3f5ed;
+  border-top: 1px solid #d0d3c4;
+  -webkit-border-radius: 0 0 6px 6px;
+  -moz-border-radius: 0 0 6px 6px;
+  border-radius: 0 0 6px 6px;
+  -webkit-box-shadow: inset 0 1px 1px #e5e7db;
+  -moz-box-shadow: inset 0 1px 1px #e5e7db;
+  box-shadow: inset 0 1px 1px #e5e7db;
+  *zoom: 1;
+}
+.modal-footer:before,
+.modal-footer:after { display: table; content: ""; line-height: 0; }
+.modal-footer:after { clear: both; }
+.modal-footer .btn + .btn { margin-left: 5px; margin-bottom: 0; }
+.modal-footer .btn-group .btn + .btn { margin-left: -1px; }
+.modal-footer .btn-block + .btn-block { margin-left: 0; }
+
+/* Base Lander Styles */
+.modal { border-radius: 6px; }
+.modal, .modal p, .modal li { color: #666; font-family: Open Sans; font-size: 12px; }
+.modal h2 { line-height: 1.2; margin: 10px 0; }
+.modal h3 { font-size: 16px; line-height: 1.333333333; margin: 10px 0; }
+.modal h4 {
+	font-size: 14px;
+	color: #666;
+	margin: 2px 0;
+	font-weight: bold;
+}
+.modal label {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.333333333;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.modal a {
+  text-align:center;
+  padding: 5px;
+  color: #0080FC;
+  font-family: Open Sans;
+  font-size:12px;
+  text-decoration: none;
+}
+.modal .no-offers { text-align: center; }
+.modal .alert-info {
+  background: transparent;
+  border: 3px solid #ccc;
+  border-radius: 6px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+.modal .linklock-description {
+  font-size: 16px;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  text-align: center;
+}
+.modal #reason { height: 90px; margin-bottom: 20px; width: 95%; }
+.modal, #offer_modal { background: white; }
+.modal .modal-header { background: white; border-radius: 6px 6px 0 0; }
+.modal .modal-header h3 { color: #666; margin: 0; }
+.modal .modal-header h3 { text-shadow: none; }
+.modal .modal-header .close { color: #333; }
+.modal .modal-body { padding-bottom: 64px; }
+.modal .modal-footer {
+  bottom: 0;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+}
+
+#offer_box { border-radius: 6px; }
+#offer_box, #offer_box p, #offer_box li { color: #666; font-family: Open Sans; font-size: 12px; }
+#offer_box h2 { line-height: 1.2; margin: 10px 0; }
+#offer_box h3 { font-size: 16px; line-height: 1.333333333; margin: 10px 0; }
+#offer_box, #offer_box_header { font-size: 16px; line-height: 1.333333333; margin: 10px 0; text-align: center; padding-top: 2px; }
+#offer_box h4 {
+	font-size: 14px;
+	color: #666;
+	margin: 2px 0;
+	font-weight: bold;
+}
+#offer_box label {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.333333333;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+#offer_box, .rating {
+  font-size: 12px;
+}
+
+#offer_box a {
+  text-align:center;
+  padding: 5px;
+  color: #0080FC;
+  font-family: Open Sans;
+  font-size:12px;
+  text-decoration: none;
+}
+#offer_box .no-offers { text-align: center; }
+#offer_box .alert-info {
+  background: transparent;
+  border: 3px solid #ccc;
+  border-radius: 6px;
+  box-shadow: none;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+#offer_box .linklock-description {
+  font-size: 16px;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  text-align: center;
+}
+#offer_box #reason { height: 90px; margin-bottom: 20px; width: 95%; }
+#offer_box, #offer_modal { background: white; }
+#offer_box #offer_box-header { display: none !important; }
+#offer_box #offer_box-header h3 { color: #666; margin: 0; }
+#offer_box #offer_box-header h3 { text-shadow: none; }
+#offer_box #offer_box-header .close { color: #333; }
+#offer_box #offer_box-body { padding-bottom: 64px; }
+#offer_box #offer_box-footer {
+  bottom: 0;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+}
+
+#modal-tablesLabel { text-align: center; }
+
+#offer_box {
+  background: #fff;
+  max-width: 560px;
+  margin-right: auto;
+  margin-left: auto;
+  }
+
+#offer_modal {
+  bottom: 15%;
+  max-height: 830px;
+  overflow-y: scroll;
+  top: 5%;
+}
+#offer_modal .modal-body { max-height: none; padding-bottom: 0; }
+#offer_modal .modal-body .bottom_instructions { color: #666; margin: 10px 0; text-align:center; }
+
+#offer_html .offer-row {
+  cursor: pointer;
+  border-bottom: 2px solid #eaeaea;
+  padding: 5px 0;
+}
+#offer_html .offer-row:before,
+#offer_html .offer-row:after { display: table; content: ""; line-height: 0; }
+#offer_html .offer-row:after { clear: both; }
+#offer_html .offer-number,
+#offer_html .star-image,
+#offer_html .offer-text,
+#offer_html .offer-button { float: left; padding-left: 1%; padding-right: 1%; }
+#offer_html .offer-number {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 80px;
+  margin: 0;
+  text-align: center;
+  width: 8%;
+}
+#offer_html .star-image { width: 16%; }
+#offer_html .star-image img { height: 80px; width: 80px; }
+#offer_html .offer-text { padding-top: 3px; text-align: left; width: 56%; }
+#offer_html .offer-text p { font-size: 12px; margin: 0 0 6px; }
+#offer_html .rating { line-height: 30px; }
+#offer_html .rating img { height: 30px; margin-top: -3px; width: 85px; }
+#offer_html .offer-button { line-height: 80px; width: 8%; }
+#offer_html .get-offer {
+  background-color: #fff;
+  border: 1px solid #0080FC;
+  border-radius: 4px;
+  color: #0080fc;
+  display: inline-block;
+  font-size: 12px;
+  font-family: Open Sans;
+  font-weight: bold;
+  height: 16px;
+  line-height: 16px;
+  padding: 5px 0;
+  text-align:center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Landscape phones
+------------------------- */
+@media (max-width: 480px) {
+  .modal { left: 10px; right: 10px; top: 10px; }
+  .modal-header .close { padding: 10px; margin: -10px; }
+}
+
+@media (max-width: 767px) {
+  .modal {
+    left: 20px;
+    margin: 0;
+    right: 20px;
+    position: fixed;
+    top: 20px;
+    width: auto;
+  }
+  .modal.fade { top: -100px; }
+  .modal.fade.in { top: 20px; }
+}
