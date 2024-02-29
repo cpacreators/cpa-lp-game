@@ -1,9 +1,9 @@
-# CPA Landing Page - Gaming Niche 1
+# "Payzip - CPA Landing Page - Gaming Niche 1
 
 <img src="https://github.com/cpacreators/cpa-landing-page-gaming-niche-1/assets/60578014/9699be60-75a6-4c82-b00b-b26d8caaeb5d"/>
 <br>
 
-Experience this efficient CPA Landing Page template, meticulously crafted for game niches. 
+Experience "Payzip": an efficient CPA Landing Page template, meticulously crafted for game niches. 
 
 You can use the search and replace function in Notepad or other text editors to save time.
 There's usualy 2x template variation with 1x & 2x resources
