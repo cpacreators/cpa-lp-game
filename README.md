@@ -3,6 +3,18 @@
 <img src="https://github.com/cpacreators/cpa-landing-page-gaming-niche-1/assets/60578014/9699be60-75a6-4c82-b00b-b26d8caaeb5d"/>
 <br>
 
+
+<p>
+  <b> &nbsp;Join Us on OGAds:</b></summary></p>
+  <p>
+   <a href="https://members.ogads.com/register?r=89668">  <img src="https://i.imgur.com/b9XZKbc.gif" alt="CPA Creators" /></a></p>
+  <br/>
+<p>
+<b> &nbsp;Join Us on Adblue Media (Ex CPABuild):</b></summary></p>
+   <a href="https://cpazip.com/aff/cpabuild">  <img src="https://i.imgur.com/jJCxowb.jpeg" alt="CPA Creators" height="250" /></a></p>
+  <br/>
+  <p>
+
 Experience "Payzip": an efficient CPA Landing Page template, meticulously crafted for game niches. 
 
 You can use the search and replace function in Notepad or other text editors to save time.
